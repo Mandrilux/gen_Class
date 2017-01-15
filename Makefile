@@ -5,7 +5,7 @@
 ## Login   <baptiste@epitech.net>
 ## 
 ## Started on  Wed Apr 27 18:58:13 2016 
-## Last update Sun Jan 15 20:03:03 2017 
+## Last update Sun Jan 15 20:34:34 2017 
 ##
 
 NAME	:=	class
@@ -17,7 +17,7 @@ CC	:=	g++
 
 OBJ	:=	$(SRC:.cpp=.o)
 
-CXXFLAGS  :=	-Wall -Wextra -W -pedantic -ansi -Werror -std=c++03 
+CXXFLAGS  :=	-Wall -Wextra -W -pedantic -ansi -Werror -std=c++03 -O3
 
 all:	$(NAME)
 

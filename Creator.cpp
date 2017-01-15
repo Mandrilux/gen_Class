@@ -5,7 +5,7 @@
 // Login   <baptiste@epitech.net>
 //
 // Started on  Sun Jan 15 19:33:24 2017
-// Last update Sun Jan 15 20:30:27 2017 
+// Last update Sun Jan 15 20:36:57 2017 
 //
 
 #include "Creator.h"
@@ -14,6 +14,7 @@
 
 Creator::Creator(std::string name)
 {
+  name.at(0) = toupper(name.at(0));
   _name = name;
   _uname.resize(name.size());
    for (size_t i = 0; i < name.size(); i++)
@@ -32,15 +33,17 @@ void Creator::genHeader() const
     {
       file << "#ifndef __"<<_uname<<"_H_" << std::endl;
       file << "#define __"<<_uname<<"_H_" << std::endl << std::endl;
-      file << "class " << std::endl;
+      file <<"/* corps du fichier .h */" << std::endl << std::endl;
+      file << "class " << _name << std::endl;
       file << "{" << std::endl << std::endl;;
-      file << "    /* Constructeur et destructeur */   " <<std::endl << std::endl;
-      file << "\tpublic:" << std::endl<< std::endl;
-      file << "\t\t" << _name << "()" << std::endl;
-      file << "\t\t~" << _name << "()" << std::endl << std::endl;
-      file << "    /* Atribut membre  */   " <<std::endl << std::endl;
-      file << "\tprivate:" << std::endl;
-      file << "};" << std::endl;
+      file << "  /* Constructeur et destructeur */   " <<std::endl << std::endl;
+      file << " public:" << std::endl<< std::endl;
+      file << "  " << _name << "();" << std::endl;
+      file << "  ~" << _name << "();" << std::endl << std::endl;
+      file << "  /* Atribut membre  */   " <<std::endl << std::endl;
+      file << " private:" << std::endl;
+      file << "};" << std::endl << std::endl;
+      file << "#endif" << std::endl;
       file.close();
       std::cout << "[+] Le Fichier " << fileHeader << " a correctement etais generer" << std::endl;
     }
