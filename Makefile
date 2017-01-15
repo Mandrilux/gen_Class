@@ -5,18 +5,19 @@
 ## Login   <baptiste@epitech.net>
 ## 
 ## Started on  Wed Apr 27 18:58:13 2016 
-## Last update Sun Jan 15 17:25:18 2017 DESKTOP-0S05REL
+## Last update Sun Jan 15 20:03:03 2017 
 ##
 
 NAME	:=	class
 
-SRC	:=	Main.cpp
+SRC	:=	main.cpp \
+		Creator.cpp
 
 CC	:=	g++
 
 OBJ	:=	$(SRC:.cpp=.o)
 
-CXXFLAGS  :=	-Wall -Wextra -W -pedantic -ansi -Werror -std=c++03 -O3
+CXXFLAGS  :=	-Wall -Wextra -W -pedantic -ansi -Werror -std=c++03 
 
 all:	$(NAME)
 
