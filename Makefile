@@ -5,20 +5,18 @@
 ## Login   <baptiste@epitech.net>
 ## 
 ## Started on  Wed Apr 27 18:58:13 2016 
-## Last update Fri Jan 13 10:42:29 2017 
+## Last update Sun Jan 15 17:25:18 2017 DESKTOP-0S05REL
 ##
 
-NAME	:=	test
+NAME	:=	class
 
-SRC	:=	Victim.cpp \
-		Sorcerer.cpp \
-		Peon.cpp
+SRC	:=	Main.cpp
 
 CC	:=	g++
 
 OBJ	:=	$(SRC:.cpp=.o)
 
-CXXFLAGS  :=	-Wall -Wextra -W -pedantic -ansi -Werror -std=c++03 -g
+CXXFLAGS  :=	-Wall -Wextra -W -pedantic -ansi -Werror -std=c++03 -O3
 
 all:	$(NAME)
 
