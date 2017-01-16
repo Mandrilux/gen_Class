@@ -5,7 +5,7 @@
 // Login   <baptiste@epitech.net>
 //
 // Started on  Sun Jan 15 19:33:24 2017
-// Last update Sun Jan 15 20:36:57 2017 
+// Last update Mon Jan 16 15:32:49 2017 
 //
 
 #include "Creator.h"
@@ -37,7 +37,7 @@ void Creator::genHeader() const
       file << "class " << _name << std::endl;
       file << "{" << std::endl << std::endl;;
       file << "  /* Constructeur et destructeur */   " <<std::endl << std::endl;
-      file << " public:" << std::endl<< std::endl;
+      file << " public:" << std::endl;
       file << "  " << _name << "();" << std::endl;
       file << "  ~" << _name << "();" << std::endl << std::endl;
       file << "  /* Atribut membre  */   " <<std::endl << std::endl;

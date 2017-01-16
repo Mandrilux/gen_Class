@@ -6,14 +6,13 @@
 class Toto
 {
 
-  /* Constructeur et destructeur */
+  /* Constructeur et destructeur */   
 
  public:
-
   Toto();
   ~Toto();
 
-  /* Atribut membre  */
+  /* Atribut membre  */   
 
  private:
 };
